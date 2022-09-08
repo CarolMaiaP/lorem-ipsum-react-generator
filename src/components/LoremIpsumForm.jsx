@@ -7,8 +7,9 @@ export function LoremIpsumForm(){
 
   function handleSubmit(e){
     e.preventDefault();
-    console.log("hello world")
-    setText(data)
+    const amount = parseInt(count);
+    console.log(amount)
+    setText(data.slice(0, amount))
   }
 
   return(
