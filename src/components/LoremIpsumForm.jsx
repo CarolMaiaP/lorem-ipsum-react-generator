@@ -17,7 +17,7 @@ export function LoremIpsumForm(){
         value={count}
         onChange={(e) => setCount(e.target.value)}
         />
-        <button type="submit">generate</button>
+        <button className="btn-generator" type="submit">generate</button>
       </form>
     </section>
   )

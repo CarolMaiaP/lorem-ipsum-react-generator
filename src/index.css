@@ -55,6 +55,42 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.lorem-generator h3 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lorem-generator label {
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.lorem-generator input {
+  width: 14%;
+  padding: 6px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+.btn-generator {
+  padding: 0.3rem 0.5rem;
+  background: #41a1e9;
+  transition: 0.2s;
+  border: none;
+}
+
+.btn-generator:hover {
+  background: #1b92eb;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
