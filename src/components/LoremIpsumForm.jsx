@@ -7,7 +7,15 @@ export function LoremIpsumForm(){
 
   function handleSubmit(e){
     e.preventDefault();
-    const amount = parseInt(count);
+    let amount = parseInt(count);
+    if(amount <= 0){
+      amount = 1;
+    }
+
+    if(amount > 8){
+      amount = 8;
+    }
+
     console.log(amount)
     setText(data.slice(0, amount))
   }
